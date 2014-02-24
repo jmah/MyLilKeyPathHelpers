@@ -97,7 +97,7 @@ static void fn(id self, SEL _cmd) {
 }
 #endif
 
-#if 0 // This should result in a compiler error without ALLOW_DEFINING_CLASS_IN_ROOT_CLASSES=1
+#if 0 // This should result in a compiler error without DEFINING_CLASS_ALLOW_USE_IN_ROOT_CLASS=1
 OBJC_ROOT_CLASS
 @interface DefiningRoot
 + (Class)definedByRoot;
