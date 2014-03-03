@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1A447D18C2FA30006AF929 /* MLHDependentKeyPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */; };
+		0B1A447F18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */; };
 		0B64CC2A18BAE18A0037D122 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B64CC2918BAE18A0037D122 /* XCTest.framework */; };
 		0B64CC2B18BAE18A0037D122 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B64CC0A18BAE18A0037D122 /* Cocoa.framework */; };
 		0B64CC3518BAE18A0037D122 /* DefiningClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64CC3418BAE18A0037D122 /* DefiningClassTests.m */; };
 		0B86BD1E18BBB63A007F599D /* DefiningClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86BD1D18BBB63A007F599D /* DefiningClass.m */; };
+		0BAA75FC18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA75FB18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1A447B18C2FA30006AF929 /* MLHDependentKeyPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLHDependentKeyPaths.h; sourceTree = "<group>"; };
+		0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPaths.m; sourceTree = "<group>"; };
+		0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPathsStaticTests.m; sourceTree = "<group>"; };
 		0B64CC0A18BAE18A0037D122 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0B64CC0D18BAE18A0037D122 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0B64CC0E18BAE18A0037D122 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -25,6 +31,7 @@
 		0B86BD1C18BBB63A007F599D /* DefiningClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefiningClass.h; sourceTree = "<group>"; };
 		0B86BD1D18BBB63A007F599D /* DefiningClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefiningClass.m; sourceTree = "<group>"; };
 		0B86BD1F18BBC034007F599D /* MyLilHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLilHelpers.h; sourceTree = "<group>"; };
+		0BAA75FB18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPathsDynamicTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,8 @@
 				0B86BD1F18BBC034007F599D /* MyLilHelpers.h */,
 				0B86BD1C18BBB63A007F599D /* DefiningClass.h */,
 				0B86BD1D18BBB63A007F599D /* DefiningClass.m */,
+				0B1A447B18C2FA30006AF929 /* MLHDependentKeyPaths.h */,
+				0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */,
 			);
 			path = MyLilHelpers;
 			sourceTree = "<group>";
@@ -93,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				0B64CC3418BAE18A0037D122 /* DefiningClassTests.m */,
+				0BAA75FB18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m */,
+				0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */,
 				0B64CC3018BAE18A0037D122 /* MyLilHelpersTests-Info.plist */,
 			);
 			path = MyLilHelpersTests;
@@ -162,6 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B86BD1E18BBB63A007F599D /* DefiningClass.m in Sources */,
+				0B1A447F18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m in Sources */,
+				0BAA75FC18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m in Sources */,
+				0B1A447D18C2FA30006AF929 /* MLHDependentKeyPaths.m in Sources */,
 				0B64CC3518BAE18A0037D122 /* DefiningClassTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
