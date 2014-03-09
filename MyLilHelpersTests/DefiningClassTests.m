@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MyLilHelpers.h"
+#import "DefiningClass.h"
 
 
 @interface DefiningClassTests : XCTestCase

@@ -8,3 +8,4 @@
 
 #import "DefiningClass.h"
 #import "MLHDependentKeyPaths.h"
+#import "NSObject+MLHKeyPathShortcuts.h"

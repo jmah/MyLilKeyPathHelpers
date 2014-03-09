@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B13EC0118CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13EC0018CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m */; };
 		0B1A447D18C2FA30006AF929 /* MLHDependentKeyPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */; };
 		0B1A447F18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */; };
 		0B64CC2A18BAE18A0037D122 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B64CC2918BAE18A0037D122 /* XCTest.framework */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B13EBFF18CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MLHKeyPathShortcuts.h"; sourceTree = "<group>"; };
+		0B13EC0018CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MLHKeyPathShortcuts.m"; sourceTree = "<group>"; };
 		0B1A447B18C2FA30006AF929 /* MLHDependentKeyPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLHDependentKeyPaths.h; sourceTree = "<group>"; };
 		0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPaths.m; sourceTree = "<group>"; };
 		0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPathsStaticTests.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				0B86BD1D18BBB63A007F599D /* DefiningClass.m */,
 				0B1A447B18C2FA30006AF929 /* MLHDependentKeyPaths.h */,
 				0B1A447C18C2FA30006AF929 /* MLHDependentKeyPaths.m */,
+				0B13EBFF18CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.h */,
+				0B13EC0018CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m */,
 			);
 			path = MyLilHelpers;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				0B1A447F18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m in Sources */,
 				0BAA75FC18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m in Sources */,
 				0B1A447D18C2FA30006AF929 /* MLHDependentKeyPaths.m in Sources */,
+				0B13EC0118CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m in Sources */,
 				0B64CC3518BAE18A0037D122 /* DefiningClassTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
