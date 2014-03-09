@@ -37,12 +37,12 @@ NSSet *MLHSuperclassKeyPathsAffecting(Class definingClass, NSString *key);
  * \p +keyPathsForValuesAffectingValueForKey: or \p +keyPathsForValuesAffectingSpecificKey. An
  * override of the former will act as normal, but an override of a specific key will be found when
  * calling up to \p NSObject's implementation. In other words, calling
- * \p [super \p keyPathsForValuesAffectingValueForKey:key] may or may not include subclass changes,
+ * \p [super keyPathsForValuesAffectingValueForKey:key] may or may not include subclass changes,
  * depending on how the subclass specified the dependencies.
  *
- * Additionally, calling \p [super \p keyPathsForValuesAffectingValueForKey:key] may call a
- * subclass's \p +keyPathsForValuesAffectingSpecificKey method, which may contain a call back to
- * \p [super \p keyPathsForValuesAffectingValueForKey:key] — causing the implementation to be run
+ * Additionally, calling \p [super keyPathsForValuesAffectingValueForKey:key] may call a subclass's
+ * \p +keyPathsForValuesAffectingSpecificKey method, which may contain a call back to
+ * \p [super keyPathsForValuesAffectingValueForKey:key] — causing the implementation to be run
  * twice. Or a subclass could choose \em not to call super, in which case this method shouldn't
  * affect what the subclass wants to return.
  *
