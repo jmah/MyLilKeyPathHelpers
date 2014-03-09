@@ -52,7 +52,7 @@ NSSet *MLHSuperclassKeyPathsAffecting(Class definingClass, NSString *key);
  \code
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
 {
-    return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, NO, key, ^(NSSet *superKeyPaths) {
+    return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, NO, key, ^(NSSet *superKeyPaths) {
         if ([self shouldAddDependentKeyPathTo:key]) {
             return [superKeyPaths setByAddingObject:@"anotherKey"];
         } else if ([self shouldReplaceDependentKeyPathsOf:key]) {
@@ -82,4 +82,4 @@ NSSet *MLHSuperclassKeyPathsAffecting(Class definingClass, NSString *key);
  *
  * \returns the key paths affecting \p key of \p self
  */
-NSSet *MLHKeyPathsForValueAffectingKeyOverride(Class self, Class definingClass, BOOL affectOwnKeys, NSString *key, NSSet *(^customizeBlock)(NSSet *superKeyPaths)) __attribute__((nonnull));
+NSSet *MLHOverrideKeyPathsForValueAffectingKey(Class self, Class definingClass, BOOL affectOwnKeys, NSString *key, NSSet *(^customizeBlock)(NSSet *superKeyPaths)) __attribute__((nonnull));

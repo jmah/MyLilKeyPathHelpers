@@ -38,7 +38,7 @@ NSSet *MLHSuperclassKeyPathsAffecting(Class definingClass, NSString *key)
 }
 
 
-NSSet *MLHKeyPathsForValueAffectingKeyOverride(Class self, Class definingClass, BOOL affectOwnKeys, NSString *key, NSSet *(^customizeBlock)(NSSet *))
+NSSet *MLHOverrideKeyPathsForValueAffectingKey(Class self, Class definingClass, BOOL affectOwnKeys, NSString *key, NSSet *(^customizeBlock)(NSSet *))
 {
     SEL _cmd = @selector(keyPathsForValuesAffectingValueForKey:);
     SEL dependentSel = MLHDependentKeySelectorForKey(key);

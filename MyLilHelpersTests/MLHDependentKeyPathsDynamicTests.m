@@ -237,16 +237,16 @@ typedef NSSet *(^KeyModifier_t)(NSSet *);
 }
 
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
-{ return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
+{ return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
 
 @end
 
 @implementation KPADSubOne
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
-{ return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
+{ return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
 @end
 
 @implementation KPADSubTwo
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
-{ return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
+{ return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, NO, key, [self muxModifierForKey:key class:_definingClass]); }
 @end

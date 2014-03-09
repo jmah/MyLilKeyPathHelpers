@@ -36,7 +36,7 @@
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
 {
     BOOL affectOwnClass = [key isEqual:@"affectedOwnDerivative"];
-    return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, affectOwnClass, key, ^NSSet *(NSSet *superKeyPaths) {
+    return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, affectOwnClass, key, ^NSSet *(NSSet *superKeyPaths) {
         if ([key hasSuffix:@"Derivative"]) {
             return [superKeyPaths setByAddingObject:[key substringToIndex:(key.length - @"Derivative".length)]];
         } else {
@@ -67,7 +67,7 @@
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key
 {
     // "Derivative" keys affect something completely different now...
-    return MLHKeyPathsForValueAffectingKeyOverride(self, _definingClass, NO, key, ^NSSet *(NSSet *superKeyPaths) {
+    return MLHOverrideKeyPathsForValueAffectingKey(self, _definingClass, NO, key, ^NSSet *(NSSet *superKeyPaths) {
         if ([key hasSuffix:@"Derivative"]) {
             return [NSSet setWithObject:[[key substringToIndex:(key.length - @"Derivative".length)] stringByAppendingString:@"2"]];
         } else {
