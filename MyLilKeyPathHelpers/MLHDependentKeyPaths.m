@@ -53,7 +53,9 @@ NSSet *MLHOverrideKeyPathsForValueAffectingKey(Class self, Class definingClass, 
         // (Another option: Jump up to NSObject's implementation, which will repeat the key mangling and call.)
         //return method_invoke(self, class_getClassMethod([NSObject class], _cmd), key);
     } else {
+        // Otherwise call super...
         NSSet *dependentKeyPaths = method_invoke(self, class_getClassMethod([definingClass superclass], _cmd), key);
+        // and allow altering the result.
         if (customizeBlock) {
             dependentKeyPaths = customizeBlock(dependentKeyPaths);
         }
