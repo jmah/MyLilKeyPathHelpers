@@ -1,6 +1,6 @@
 //
 //  MLHKeyPathShortcutsTests.m
-//  MyLilHelpers
+//  MyLilKeyPathHelpers
 //
 //  Created by Jonathon Mah on 2014-03-08.
 //  Copyright (c) 2014 Jonathon Mah. All rights reserved.

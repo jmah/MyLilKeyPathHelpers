@@ -1,6 +1,6 @@
 //
 //  MLHDependentKeyPaths.h
-//  MyLilHelpers
+//  MyLilKeyPathHelpers
 //
 //  Created by Jonathon Mah on 2014-03-01.
 //  Copyright (c) 2014 Jonathon Mah. All rights reserved.

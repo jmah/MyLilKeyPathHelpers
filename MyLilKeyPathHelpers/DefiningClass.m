@@ -1,6 +1,6 @@
 //
 //  DefiningClass.m
-//  MyLilHelpers
+//  MyLilKeyPathHelpers
 //
 //  Created by Jonathon Mah on 2014-02-24.
 //  Copyright (c) 2014 Jonathon Mah. All rights reserved.
@@ -12,7 +12,7 @@
 #import <objc/runtime.h>
 
 
-Class MyLilHelpers_DefiningClassFromFunc(const char *func)
+Class MyLilKeyPathHelpers_DefiningClassFromFunc(const char *func)
 {
     // __func__ looks like this:
     //   "+[SomeClass classSel:]"

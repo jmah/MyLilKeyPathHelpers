@@ -27,13 +27,13 @@
 		0B64CC0D18BAE18A0037D122 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0B64CC0E18BAE18A0037D122 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B64CC0F18BAE18A0037D122 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0B64CC2818BAE18A0037D122 /* MyLilHelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLilHelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B64CC2818BAE18A0037D122 /* MyLilKeyPathHelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLilKeyPathHelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B64CC2918BAE18A0037D122 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0B64CC3018BAE18A0037D122 /* MyLilHelpersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyLilHelpersTests-Info.plist"; sourceTree = "<group>"; };
+		0B64CC3018BAE18A0037D122 /* MyLilKeyPathHelpersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyLilKeyPathHelpersTests-Info.plist"; sourceTree = "<group>"; };
 		0B64CC3418BAE18A0037D122 /* DefiningClassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefiningClassTests.m; sourceTree = "<group>"; usesTabs = 0; };
 		0B86BD1C18BBB63A007F599D /* DefiningClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefiningClass.h; sourceTree = "<group>"; };
 		0B86BD1D18BBB63A007F599D /* DefiningClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefiningClass.m; sourceTree = "<group>"; };
-		0B86BD1F18BBC034007F599D /* MyLilHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLilHelpers.h; sourceTree = "<group>"; };
+		0B86BD1F18BBC034007F599D /* MyLilKeyPathHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLilKeyPathHelpers.h; sourceTree = "<group>"; };
 		0BAA75FB18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHDependentKeyPathsDynamicTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,8 +53,8 @@
 		0B64CBFE18BAE18A0037D122 = {
 			isa = PBXGroup;
 			children = (
-				0B64CC1018BAE18A0037D122 /* MyLilHelpers */,
-				0B64CC2E18BAE18A0037D122 /* MyLilHelpersTests */,
+				0B64CC1018BAE18A0037D122 /* MyLilKeyPathHelpers */,
+				0B64CC2E18BAE18A0037D122 /* MyLilKeyPathHelpersTests */,
 				0B64CC0918BAE18A0037D122 /* Frameworks */,
 				0B64CC0818BAE18A0037D122 /* Products */,
 			);
@@ -64,7 +64,7 @@
 		0B64CC0818BAE18A0037D122 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B64CC2818BAE18A0037D122 /* MyLilHelpersTests.xctest */,
+				0B64CC2818BAE18A0037D122 /* MyLilKeyPathHelpersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,10 +89,10 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		0B64CC1018BAE18A0037D122 /* MyLilHelpers */ = {
+		0B64CC1018BAE18A0037D122 /* MyLilKeyPathHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				0B86BD1F18BBC034007F599D /* MyLilHelpers.h */,
+				0B86BD1F18BBC034007F599D /* MyLilKeyPathHelpers.h */,
 				0B86BD1C18BBB63A007F599D /* DefiningClass.h */,
 				0B86BD1D18BBB63A007F599D /* DefiningClass.m */,
 				0B1A447B18C2FA30006AF929 /* MLHDependentKeyPaths.h */,
@@ -100,26 +100,26 @@
 				0B13EBFF18CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.h */,
 				0B13EC0018CC4FCA00B419AB /* NSObject+MLHKeyPathShortcuts.m */,
 			);
-			path = MyLilHelpers;
+			path = MyLilKeyPathHelpers;
 			sourceTree = "<group>";
 		};
-		0B64CC2E18BAE18A0037D122 /* MyLilHelpersTests */ = {
+		0B64CC2E18BAE18A0037D122 /* MyLilKeyPathHelpersTests */ = {
 			isa = PBXGroup;
 			children = (
 				0B64CC3418BAE18A0037D122 /* DefiningClassTests.m */,
 				0BAA75FB18C2408F00022227 /* MLHDependentKeyPathsDynamicTests.m */,
 				0B1A447E18C30A28006AF929 /* MLHDependentKeyPathsStaticTests.m */,
-				0B64CC3018BAE18A0037D122 /* MyLilHelpersTests-Info.plist */,
+				0B64CC3018BAE18A0037D122 /* MyLilKeyPathHelpersTests-Info.plist */,
 			);
-			path = MyLilHelpersTests;
+			path = MyLilKeyPathHelpersTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B64CC2718BAE18A0037D122 /* MyLilHelpersTests */ = {
+		0B64CC2718BAE18A0037D122 /* MyLilKeyPathHelpersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B64CC3B18BAE18B0037D122 /* Build configuration list for PBXNativeTarget "MyLilHelpersTests" */;
+			buildConfigurationList = 0B64CC3B18BAE18B0037D122 /* Build configuration list for PBXNativeTarget "MyLilKeyPathHelpersTests" */;
 			buildPhases = (
 				0B64CC2418BAE18A0037D122 /* Sources */,
 				0B64CC2518BAE18A0037D122 /* Frameworks */,
@@ -129,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = MyLilHelpersTests;
-			productName = MyLilHelpersTests;
-			productReference = 0B64CC2818BAE18A0037D122 /* MyLilHelpersTests.xctest */;
+			name = MyLilKeyPathHelpersTests;
+			productName = MyLilKeyPathHelpersTests;
+			productReference = 0B64CC2818BAE18A0037D122 /* MyLilKeyPathHelpersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +144,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jonathon Mah";
 			};
-			buildConfigurationList = 0B64CC0218BAE18A0037D122 /* Build configuration list for PBXProject "MyLilHelpers" */;
+			buildConfigurationList = 0B64CC0218BAE18A0037D122 /* Build configuration list for PBXProject "MyLilKeyPathHelpers" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B64CC2718BAE18A0037D122 /* MyLilHelpersTests */,
+				0B64CC2718BAE18A0037D122 /* MyLilKeyPathHelpersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MyLilHelpersTests/MyLilHelpersTests-Info.plist";
+				INFOPLIST_FILE = "MyLilKeyPathHelpersTests/MyLilKeyPathHelpersTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -289,7 +289,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MyLilHelpersTests/MyLilHelpersTests-Info.plist";
+				INFOPLIST_FILE = "MyLilKeyPathHelpersTests/MyLilKeyPathHelpersTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -298,7 +298,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B64CC0218BAE18A0037D122 /* Build configuration list for PBXProject "MyLilHelpers" */ = {
+		0B64CC0218BAE18A0037D122 /* Build configuration list for PBXProject "MyLilKeyPathHelpers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B64CC3618BAE18B0037D122 /* Debug */,
@@ -307,7 +307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B64CC3B18BAE18B0037D122 /* Build configuration list for PBXNativeTarget "MyLilHelpersTests" */ = {
+		0B64CC3B18BAE18B0037D122 /* Build configuration list for PBXNativeTarget "MyLilKeyPathHelpersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B64CC3C18BAE18B0037D122 /* Debug */,

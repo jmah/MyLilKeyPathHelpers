@@ -1,6 +1,6 @@
 //
 //  DefiningClassTests.m
-//  MyLilHelpersTests
+//  MyLilKeyPathHelpersTests
 //
 //  Created by Jonathon Mah on 2014-02-23.
 //  Copyright (c) 2014 Jonathon Mah. All rights reserved.
