@@ -46,7 +46,7 @@ NSSet *MLHSuperclassKeyPathsAffecting(Class definingClass, NSString *key);
  * twice. Or a subclass could choose \em not to call super, in which case this method shouldn't
  * affect what the subclass wants to return.
  *
- * This method determines whether customization of super's set is appropriate and, if so, calls the
+ * This function determines whether customization of super's set is appropriate and, if so, calls the
  * block argument to perform the changes.
  *
  \code
